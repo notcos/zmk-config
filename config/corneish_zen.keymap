@@ -1,13 +1,13 @@
-/*
-*
-* Copyright (c) 2021 Darryl deHaan
-* SPDX-License-Identifier: MIT
-*
-*/
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+
+/ {
+  chosen {
+    zmk,matrix_transform = &default_transform;
+    //zmk,matrix_transform = &five_column_transform;
+  };
+};
 
 #define NUM_L 1
 #define VIM_L 2
@@ -79,14 +79,6 @@
         };
     };
 
- {
-    chosen {
-        // zmk,matrix_transform = &default_transform;
-         zmk,matrix_transform = &five_column_transform;
-    };
-};
-
-/ {
     keymap {
         compatible = "zmk,keymap";
 
