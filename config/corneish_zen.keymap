@@ -15,6 +15,7 @@
 #define BLU_L 4
 #define FUN_L 5
 
+
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
 
@@ -40,6 +41,7 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods";
+            quick-tap-ms = <175>;
             #binding-cells = <2>;
             tapping_term_ms = <200>;
             flavor = "tap-preferred";
